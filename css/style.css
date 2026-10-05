@@ -1,0 +1,33 @@
+
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 400px;
+    margin: 0;
+    padding: 0;
+}
+
+ul li+li{
+    margin-left: 20px;
+}
+.portlogo{
+    margin-top: -10px;
+    font-size: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.navbar{
+    background-color: #3E8914;
+    padding: 10px;
+}
+.navbar a{
+    text-decoration: none;
+}
+
+.ad{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+}
