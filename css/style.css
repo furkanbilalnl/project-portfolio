@@ -1,33 +1,122 @@
+.stage {  
+    position: relative;
+    cursor: pointer;
+    
+    -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;    
+   overflow: hidden;    
+}
 
-ul{
+.bannerSize{ 
+width: 100%;
+max-width: 1920px;
+height: 100vh;
+margin: 0 auto;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html,
+body{
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+}
+
+nav ul{
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 400px;
+    gap: clamp(56px, 3.65vw, 70px);
+    height: 50px;
+    width: 100%;
     margin: 0;
     padding: 0;
+    position: relative;
+    z-index: 1;
 }
 
-ul li+li{
-    margin-left: 20px;
-}
-.portlogo{
-    margin-top: -10px;
-    font-size: 30px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.navbar{
-    background-color: #3E8914;
-    padding: 10px;
-}
-.navbar a{
-    text-decoration: none;
-}
-
-.ad{
+nav ul li{
     display: flex;
-    justify-content: flex-end;
-    margin-right: 100px;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    min-width: 0;
+    height: 50px;
+    box-sizing: border-box;
+    background-color: green;
+    transform: skewX(-45deg);
+}
+
+nav ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 38px;
+    padding: 0 28px;
+    transform: skewX(45deg);
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: -10px;
+}
+
+
+.portlogo{
+    justify-content: flex-start;
+    padding-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: white;
+}
+
+.portlogo span{
+    display: block;
+    transform: skewX(45deg);
+}
+.navbarclass{
+    background: transparent;
+}
+
+#adtext{
+    font-size: 40px;
+    font-weight: 800;
+    position: absolute;
+    top: 80px;
+    right: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #134611;
+    
+}
+
+
+
+
+#adbox{
+    background-color:#E8FCCF;
+    width: 500px;
+    height: 700px;
+    position: absolute;
+    border-radius: 20px;
+    top: 80px;
+    right: 25px;
+}
+
+/* #deneme{
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+} */
+
+
+nav{
+    position: relative;
+    height: 50px;
 }
