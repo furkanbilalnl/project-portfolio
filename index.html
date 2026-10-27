@@ -7,22 +7,34 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="stage bannerSize">
-        <header>
-            <div class="navbarclass">
-                    <nav>
-                        <ul>
-                            <li class="portlogo"><span>Portfolio</span></li>
-                            <li><a href="#">home</a></li>
-                            <li><a href="#">overmij</a></li>
-                            <li><a href="#">projects</a></li>
-                        </ul>
-                    </nav>
-            </div>
+    <div class="stage">
+        <video class="background-video" autoplay muted loop playsinline aria-hidden="true">
+            <source src="img/11655742-hd_1920_1080_25fps.mp4" type="video/mp4">
+        </video>
+        <div class="video-tint" aria-hidden="true"></div>
+
+        <header class="site-header">
+            <nav class="navigation" aria-label="Main navigation">
+                <a class="nav-logo" href="/index.html">Portfolio</a>
+                <a class="nav-link nav-home" href="/index.html">home</a>
+                <a class="nav-link nav-about" href="/pages/aboutme.html">overmij</a>
+                <a class="nav-link nav-projects" href="/pages/projects.html">projecten</a>
+            </nav>
         </header>
-        <main>
-            <div id="adbox"></div>
-            <h2 id="adtext">Furkan Bilal Çubuk</h2>
+
+        <main id="home" class="main-content">
+            <section class="hero-card" aria-labelledby="adtext">
+                <div class="portrait-backdrop" aria-hidden="true"></div>
+                <div class="portrait-frame">
+                    <img id="foto" src="img/1000031762.jpg" alt="Furkan Bilal Çubuk">
+                </div>
+                <h1 id="adtext">Furkan Bilal Çubuk</h1>
+                <p class="subtitle" id="about">Software Developer Student</p>
+                <div class="interests" id="projects">
+                    <p>Onprofessioneel Chef</p>
+                    <p>Onprofessioneel Gamer</p>
+                </div>
+            </section>
         </main>
     </div>
 </body>
