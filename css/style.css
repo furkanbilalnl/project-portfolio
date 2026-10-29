@@ -492,20 +492,27 @@ body.projects-page {
 .projects-page .star-review {
   display: flex;
   margin-top: -70px;
-  margin-left: 490px;
+  margin-left: 580px;
   --size: 50px;
   height: var(--size);
   width: calc(5 * var(--size));
   appearance: none;
   border: 2px solid #3e8914;
-  background-color: #e8fccf;
+  background-color: #96e072;
   border-radius: 10px;
 }
+.projects-page .star-review::-moz-range-thumb {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: #134611;
+    border: 2px solid #3e8914;
+  }
 
 .projects-page .star #rating {
   display: flex;
   margin-top: -75px;
-  margin-left: 500px;
+  margin-left: 590px;
   font-size: 17px;
   font-weight: lighter;
   font-style: italic;
@@ -530,4 +537,26 @@ body.projects-page {
   font-weight: lighter;
   font-style: italic;
   color: #e8fccf;
+}
+
+.projects-page .send-button{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 70px;
+  font-size: 15px;
+  font-weight: 550;
+  color: #134611;
+  background-color: #96e072;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin-left: 470px;
+}
+
+.projects-page .send-button:hover{
+  background-color: #e8fccf;
+  color: #134611;
 }
