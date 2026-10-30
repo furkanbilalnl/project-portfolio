@@ -145,7 +145,7 @@ body {
   width: 80%;
   margin: 0;
   color: #134611;
-  font-size: clamp(28px, 3.75vw, 72px);
+  font-size: 32px;
   font-weight: 700;
   line-height: 1.2;
 }
@@ -156,7 +156,7 @@ body {
   left: 21.9%;
   margin: 0;
   color: #3e8914;
-  font-size: clamp(18px, 1.67vw, 32px);
+  font-size: 32px;
 }
 
 .interests-block {
