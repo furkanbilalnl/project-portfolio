@@ -1,0 +1,255 @@
+* {
+  box-sizing: border-box;
+  margin-left: 0;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  background-color: #e8fccf;
+}
+
+body {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+}
+
+.site-header {
+  position: relative;
+  z-index: 1;
+  height: 46px;
+}
+
+.navigation {
+  display: grid;
+  grid-template-columns: 23% 25.5% 25.5% 26%;
+  width: 100%;
+  height: 46px;
+}
+
+.navigation a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  color: #e8fccf;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.nav-logo,
+.nav-link {
+  background: #3e8914;
+  clip-path: polygon(15% 0, 100% 0, 85% 100%, 0 100%);
+}
+
+.nav-logo {
+  justify-content: flex-start !important;
+  padding-left: 3.75vw;
+  font-size: clamp(20px, 2.35vw, 45px);
+}
+
+.nav-link {
+  font-size: clamp(16px, 1.56vw, 30px);
+}
+
+.nav-home {
+  margin-left: 4%;
+}
+
+.nav-about {
+  margin-left: 4%;
+}
+
+.nav-projects {
+  margin-left: 4%;
+}
+
+main {
+  min-width: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: -40px;
+}
+
+.interview-block {
+  display: flex;
+  text-align:start;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 750px;
+  width: 890px;
+  padding: 28px 35px;
+  border-radius: 20px;
+  background-color: #134611;
+  margin-right: 40px;
+}
+
+.interview-block h2 {
+  font-size: 60px;
+  color: #e8fccf;
+  margin: 0 0 14px;
+}
+.soru {
+  font-size: 24px;
+  font-weight: bold;
+  color: #e8fccf;
+  line-height: 1.2;
+  padding: 0;
+  margin: 0;
+}
+.cevap {
+  font-size: 23px;
+  font-weight: lighter;
+  font-style: italic;
+  color: #e8fccf;
+  line-height: 1.2;
+  margin: 0 0 22px 12px;
+}
+
+.projecten-table {
+  display: flex;
+  flex-direction: column;
+  height: 750px;
+  width: 650px;
+  /*     margin-right: -150px; */
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #134611;
+}
+
+.projecten-table h2 {
+  display: flex;
+  align-items: center;
+  flex: 0 0 140px;
+  margin: 0 0 7px;
+  padding: 20px;
+  border-radius: 20px 20px 0 0;
+  background-color: #e8fccf;
+  color: #134611;
+  font-size: 40px;
+}
+
+.projecten-table ul {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 7px;
+  min-height: 0;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border-radius: 20px;
+  background-color: #134611;
+}
+
+.projecten-table li {
+  display: grid;
+  flex: 1;
+  grid-template-columns: 30% 1fr;
+  gap: 7px;
+}
+
+.projecten-table li span {
+  display: flex;
+  align-items: center;
+  font-size: larger;
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: #e8fccf;
+  color: #134611;
+}
+
+.email-input {
+  display: flex;
+/*   justify-content: center;
+  align-items: center; */
+  margin-top: 70px;
+  margin-bottom: 20px;
+  margin-left: 240px;
+  height: 50px;
+  width: 220px;
+  border-radius: 10px;
+  border: 2px solid #e8fccf;
+  background-color: #e8fccf;
+  color: #134611;
+}
+
+.email-input::placeholder {
+  background-color: #e8fccf;
+}
+
+.email-input:focus {
+  border-color: #3e8914;
+  outline: none;
+}
+
+.number-input {
+  display: flex;
+/*   justify-self: center;
+  align-self: flex-start; */
+  margin-top: -70px;
+  height: 50px;
+  width: 220px;
+  border-radius: 10px;
+  border: 2px solid #e8fccf;
+  background-color: #e8fccf;
+  color: #134611;
+  /* outline: 2px solid red; */
+}
+
+.number-input::placeholder {
+  background-color: #e8fccf;
+}
+
+.number-input:focus {
+  /*   background-color: #3e8914; */
+  border-color: #3e8914;
+  outline: none;
+}
+
+
+.star-review {
+  display: flex;
+  margin-top: -70px;
+  margin-left: 490px;
+  --size: 50px;
+  height: var(--size);
+  width: calc(5 * var(--size));
+  appearance: none;
+  border: 2px solid #3e8914;
+  background-color: #e8fccf;
+  border-radius: 10px;
+}
+
+.star #rating{
+  display: flex;
+  margin-top: -75px;
+  margin-left: 500px;
+  font-size: 17px;
+  font-weight: lighter;
+  font-style: italic;
+  color: #e8fccf;
+}
+.star #email{
+  display: flex;
+  margin-top: -35px;
+  margin-left: 250px;
+  font-size: 17px;
+  font-weight: lighter;
+  font-style: italic;
+  color: #e8fccf;
+}
+.star #number{
+  display: flex;
+  margin-top: -37px;
+  margin-left: 10px;
+  font-size: 17px;
+  font-weight: lighter;
+  font-style: italic;
+  color: #e8fccf;
+}
