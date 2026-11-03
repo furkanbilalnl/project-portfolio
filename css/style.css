@@ -104,6 +104,7 @@ body {
   min-height: min(884px, calc(100vh - 138px));
   border-radius: 20px;
   background: #e8fccf;
+  margin-right: 30px;
 }
 
 .portrait-background {
@@ -340,7 +341,7 @@ body.projects-page {
   width: 650px;
   padding: 20px;
   border-radius: 20px;
-  margin-left: 20px;
+  margin-left: 30px;
   background-color: #134611;
 }
 
