@@ -184,10 +184,10 @@ body.about-page {
 .about-page .text-block {
   z-index: 99;
   display: flex;
-  align-self: flex-end;
+/*   align-self: flex-end; */
   flex-direction: column;
   margin-top: 50px;
-  margin-right: 60px;
+  margin-left: 850px;
   height: 700px;
   width: 800px;
   background-color: #96e072;
@@ -250,7 +250,7 @@ body.about-page {
 .about-page .portrait-frame2 {
   display: flex;
   justify-content: flex-end;
-  margin-top: -640px;
+  margin-top: -650px;
   margin-left: 70px;
   width: 600px;
   height: 600px;
