@@ -287,12 +287,12 @@ body.projects-page {
 
 .projects-page main {
   min-width: 100vh;
-  min-height: 100vh;
+  min-height: calc(100ch - 21px);
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
   align-items: center;
-  margin-top: -25px;
+  margin-top: 10px;
 }
 
 .projects-page .interview-block {
@@ -377,7 +377,7 @@ body.projects-page {
 .projects-page .projecten-table li {
   display: grid;
   flex: 1;
-  grid-template-columns: 200px 403px;
+  grid-template-columns: 280px 323px;
   gap: 7px;
 }
 
@@ -388,6 +388,14 @@ body.projects-page {
   font-weight: bold;
   padding: 10px 20px;
   background-color: #e8fccf;
+  color: #134611;
+}
+
+.projects-page li span.soon{
+  color: #e8fccf;
+}
+
+.projects-page li span.soon:hover{
   color: #134611;
 }
 
