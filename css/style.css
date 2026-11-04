@@ -8,11 +8,9 @@ body {
   width: 100%;
   min-height: 100%;
   margin: 0;
-}
-
-body {
   font-family: Inter, Arial, Helvetica, sans-serif;
 }
+
 
 .background-block {
   position: relative;
@@ -48,8 +46,10 @@ body {
 
 .navigation {
   display: grid;
-  grid-template-columns: 23% 25.5% 25.5% 26%;
-  width: 100%;
+  grid-template-columns: 25% 25% 25% 25%;
+  margin-top: -3.6%;
+  width: 81%;
+  margin-left: 19%;
   height: 46px;
 }
 
@@ -70,9 +70,13 @@ body {
 }
 
 .nav-logo {
-  justify-content: flex-start !important;
-  padding-left: 3.75vw;
-  font-size: 42px;
+  font-size: 52px;
+  user-select: none;
+  padding: 0.1% 13.5% 0% 5%;
+  margin-left: -3.9%;
+  color: #e8fccf;
+  font-weight: 700;
+  clip-path: polygon(0% 0, 74% 0, 62% 100%, 0 100%);
 }
 
 .nav-link {
@@ -91,6 +95,11 @@ body {
   margin-left: 4%;
 }
 
+.nav-contact {
+  margin-left: 4%;
+}
+
+
 .content-block {
   display: flex;
   justify-content: flex-end;
@@ -103,18 +112,9 @@ body {
   width: min(777px, 48vw);
   min-height: min(884px, calc(100vh - 138px));
   border-radius: 20px;
-  background: #e8fccf;
+  background: #e8fccf81;
   margin-right: 30px;
-}
-
-.portrait-background {
-  position: absolute;
-  top: 25.4%;
-  left: 16.7%;
-  width: 63%;
-  aspect-ratio: 490 / 474;
-  border-radius: 50%;
-  background: #e8fccf;
+  
 }
 
 .portrait-frame {
@@ -124,7 +124,7 @@ body {
   width: 60%;
   aspect-ratio: 490 / 474;
   overflow: hidden;
-  border: 8px solid #e8fccf;
+/*   border: 8px solid #e8fccf; */
   border-radius: 50%;
 }
 
@@ -146,7 +146,7 @@ body {
   width: 80%;
   margin: 0;
   color: #134611;
-  font-size: 32px;
+  font-size: 42px;
   font-weight: 700;
   line-height: 1.2;
 }
@@ -156,7 +156,7 @@ body {
   bottom: 16.2%;
   left: 21.9%;
   margin: 0;
-  color: #3e8914;
+  color: #134611;
   font-size: 32px;
 }
 
@@ -168,7 +168,7 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 16px;
-  color: #3e8914;
+  color: #134611;
   font-size: clamp(16px, 1.67vw, 32px);
 }
 
@@ -186,8 +186,9 @@ body.about-page {
   z-index: 99;
   display: flex;
 /*   align-self: flex-end; */
+align-items: center;
   flex-direction: column;
-  margin-top: 50px;
+  margin-top: 90px;
   margin-left: 850px;
   height: 700px;
   width: 800px;
@@ -199,58 +200,19 @@ body.about-page {
   color: #e8fccf;
   font-size: 60px;
   text-align: left;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-left: 40px;
 }
 
 .about-page .text-block p {
   color: #3e8914;
-  font-size: 30px;
+  font-size: 29px;
+  margin-top: -15 px;
   margin-left: 40px;
-}
-
-
-.about-page .contact-block {
-  z-index: 99;
-  display: flex;
-  align-self: center;
-  flex-direction: row;
-  justify-content: flex-start;
-  gap: 420px;
-  margin-top: 90px;
-  margin-left: 70px;
-  height: 70px;
-  width: 1580px;
-  background-color: #96e072;
-  border-radius: 15px;
-}
-
-.about-page .contact-block-text {
-  z-index: 999;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  text-align: center;
-  margin-top: -40px;
-  margin-right: 120px;
-  margin-left: 20px;
-}
-
-.about-page .contact-block-text a {
-  color: #3e8914;
-}
-
-.about-page #mail {
-  margin-left: 110px;
-}
-
-.about-page #underlinesiz {
-  text-decoration: none;
+  margin-right: 40px;
 }
 
 .about-page .portrait-frame2 {
-  display: flex;
-  justify-content: flex-end;
   margin-top: -650px;
   margin-left: 70px;
   width: 600px;
@@ -261,21 +223,10 @@ body.about-page {
   border: 10px solid #3e8914;
   box-sizing: border-box;
 }
-
-.about-page .portrait-frame2 video {
-  display: block;
+.about-page .portrait-frame2 video{
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.about-page .contact-block img {
-  display: flex;
-  flex-direction: row;
-  margin-left: 80px;
-  margin-top: 15px;
-  height: 40px;
-  width: 40px;
 }
 
 .projects-page {
@@ -331,6 +282,23 @@ body.projects-page {
   color: #e8fccf;
   line-height: 1.2;
   margin: 0 0 22px 12px;
+}
+
+.projects-page #tony{
+  height: 100px;
+  width: 100px;
+  border-radius: 99px;
+  border: 5px #96e072 solid;
+}
+
+.projects-page #tonytext{
+  margin-top: -7%;
+  margin-left: 14%;
+  text-decoration: none;
+  color: #96e072;
+  font-weight: bold;
+/*   height: 100px;
+  width: 100px; */
 }
 
 .projects-page .projecten-table {
@@ -444,7 +412,6 @@ body.projects-page {
 
 .projects-page .star-review {
   display: flex;
-  margin-top: -60px;
   margin-left: 650px;
   height: 50px;
   width: 195px;
@@ -634,3 +601,174 @@ body.projects-page {
 }
  */
 
+
+
+.contact-page .contact-block img {
+  display: flex;
+  flex-direction: row;
+  margin-left: 80px;
+  margin-top: 15px;
+  height: 40px;
+  width: 40px;
+}
+
+.contact-page body{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width:100vw;
+  background-color: #e8fccf;
+}
+
+.contact-page .contact-block {
+  z-index: 99;
+  display: flex;
+  align-self: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 420px;
+  margin-top: 5%;
+  margin-left: 70px;
+  height: 70px;
+  width: 1580px;
+  background-color: #96e072;
+  border-radius: 15px;
+}
+
+.contact-page .contact-block-text {
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: -40px;
+  margin-right: 120px;
+  margin-left: 20px;
+}
+
+.contact-page .contact-block-text a {
+  color: #3e8914;
+}
+
+.contact-page #mail {
+  margin-left: 110px;
+}
+
+.contact-page #underlinesiz {
+  text-decoration: none;
+}
+
+.contact-page .mainkare{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -8%;
+
+}
+
+.contact-page .form{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 30px;
+  padding: 40px 4% 20px;
+  border-radius: 20px;
+  margin-top: 15%;
+  height: 600px;
+  width: 1200px;
+  background-color: #3e8914;
+}
+
+.contact-page .form h2{
+  color: #e8fccf;
+  font-size: 50px;
+}
+
+.contact-page .textarea{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 30px;
+  min-height: 0;
+  width: 100%;
+}
+
+.contact-page .textarea #text{
+  flex: 1;
+  width: 100%;
+  resize: none;
+  margin: 0;
+  border-radius: 10px;
+  border: 1px solid #e8fccf;
+
+  font-weight: bold;
+  color: #134611;
+  background-color: #e8fccf;
+}
+
+.contact-page .inputs{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  width: 100%;
+}
+
+
+.contact-page #mail2{
+  flex: 1;
+  height: 66px;
+  width: 0;
+  margin-left: 0;
+  border-radius: 10px;
+
+  font-weight: bold;
+  color: #134611;
+  background-color: #e8fccf;
+  border: 1px solid #e8fccf;
+}
+
+.contact-page #name{
+  flex: 1;
+  height: 66px;
+  width: 0;
+  background-color: #e8fccf;
+  border-radius: 10px;
+
+  font-weight: bold;
+  color: #134611;
+  background-color: #e8fccf;
+  border: 1px solid #e8fccf;
+}
+
+.contact-page #buton{
+  width: 125px;
+  height: 55px;
+  border-radius: 10px;
+  background-color: #e8fccf;
+  border: 1px solid #e8fccf;
+  font-weight: bold;
+  color: #134611;
+  background-color: #e8fccf;
+}
+
+.contact-page #buton:hover{
+  background-color: #96e072;
+  border: 1px solid #96e072;
+}
+
+.contact-page #name:focus{
+  border: 1px solid #134611;
+  outline: 2px solid #134611;
+}
+
+.contact-page #mail2:focus{
+  border: 1px solid #134611;
+  outline: 2px solid #134611;
+}
+
+.contact-page #text:focus{
+  border: 1px solid #134611;
+  outline: 2px solid #134611;
+}
