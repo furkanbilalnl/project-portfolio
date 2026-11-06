@@ -700,6 +700,7 @@ body.projects-page {
   width: 100%;
   resize: none;
   margin: 0;
+  padding: 2%;
   border-radius: 10px;
   border: 1px solid #e8fccf;
 
@@ -719,6 +720,7 @@ body.projects-page {
 .contact-page #mail2{
   flex: 1;
   height: 66px;
+  padding: 2%;
   width: 0;
   margin-left: 0;
   border-radius: 10px;
@@ -732,6 +734,7 @@ body.projects-page {
 .contact-page #name{
   flex: 1;
   height: 66px;
+  padding: 2%;
   width: 0;
   background-color: #e8fccf;
   border-radius: 10px;
