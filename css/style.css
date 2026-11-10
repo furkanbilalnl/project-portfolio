@@ -417,7 +417,7 @@ body.projects-page {
   width: 195px;
   border:none;
   background-color: #96e072;
-  background: url(/img/star-empty.png) center / cover no-repeat;
+  background: url(../img/star-empty.png) center / cover no-repeat;
   border-radius: 10px;
 }
 .projects-page .star-review::-moz-range-thumb {
@@ -427,7 +427,7 @@ body.projects-page {
     background: #134611;
     border: none;
 /*     border: 2px solid #3e8914; */
-    background: url(/img/star2.png) center / cover no-repeat;
+    background: url(../img/star2.png) center / cover no-repeat;
   }
 
 .projects-page .star #rating {
