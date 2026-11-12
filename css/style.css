@@ -704,7 +704,8 @@ body.projects-page {
   border-radius: 10px;
   border: 1px solid #e8fccf;
 
-  font-weight: bold;
+  /* font-weight: bold; */
+  font-size: 15px;
   color: #134611;
   background-color: #e8fccf;
 }
@@ -725,7 +726,8 @@ body.projects-page {
   margin-left: 0;
   border-radius: 10px;
 
-  font-weight: bold;
+  /* font-weight: bold; */
+  font-size: 15px;
   color: #134611;
   background-color: #e8fccf;
   border: 1px solid #e8fccf;
@@ -739,7 +741,8 @@ body.projects-page {
   background-color: #e8fccf;
   border-radius: 10px;
 
-  font-weight: bold;
+  font-size: 15px;
+  /* font-weight: bold; */
   color: #134611;
   background-color: #e8fccf;
   border: 1px solid #e8fccf;
@@ -936,7 +939,7 @@ body.projects-page {
     margin-top: 8px;
   }
 
-  .projects-page .star-review {
+  .projects-page .star-review{
     margin: 0;
     max-width: 100%;
   }
@@ -1151,7 +1154,7 @@ body.projects-page {
     padding: 16px;
     font-size: 30px;
   }
-
+  
   .projects-page .projecten-table li span {
     padding: 8px;
     font-size: 15px;
