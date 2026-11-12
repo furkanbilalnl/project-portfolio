@@ -9,66 +9,54 @@
   <body class="projects-page">
     <header class="site-header">
       <a class="nav-logo">Portfolio</a>
-     <!-- In een navbar gebruik je eigenlijk altijd een UL met een LI en in de LI de A HREF -->
       <nav class="navigation">
-        <a class="nav-link nav-home" href="../index.html">home</a>
-        <a class="nav-link nav-about" href="aboutme.html">over mij</a>
-        <a class="nav-link nav-projects" href="projecten.html">projecten</a>
-        <a class="nav-link nav-contact" href="contact.html">contact</a>
+        <ul>
+          <li><a class="nav-link nav-home" href="../index.html">home</a></li>
+          <li><a class="nav-link nav-about" href="aboutme.html">over mij</a></li>
+          <li><a class="nav-link nav-projects" href="projecten.html">projecten</a></li>
+          <li><a class="nav-link nav-contact" href="contact.html">contact</a></li>
+        </ul>
       </nav>
     </header>
     <main>
       <section class="interview-block">
         <h2>Vragen</h2>
-        <p class="soru">
-          1- Waarom heb je gekozen voor de opleiding Software Developer?
-        </p>
+        <p class="soru">1- Waarom heb je gekozen voor de opleiding Software Developer?</p>
         <p class="cevap">Ik hou van computers en wil er mijn werk van maken.</p>
         <p class="soru">2- Wat sprak je het meeste aan in deze opleiding?</p>
         <p class="cevap">De snelle start en ontwikkeling.</p>
-        <p class="soru">
-          3- Had je al ervaring met programmeren voordat je aan de opleiding
-          begon?
-        </p>
+        <p class="soru">3- Had je al ervaring met programmeren voordat je aan de opleiding begon?</p>
         <p class="cevap">Ik heb een Python-cursus van 6 maanden gevolgd.</p>
         <p class="soru">4- Wat hoop je te leren tijdens de opleiding?</p>
         <p class="cevap">Programmeertalen leren en samenwerken in een team.</p>
-        <p class="soru">
-          5- Wat vind je tot nu toe het leukste onderdeel van de opleiding?
-        </p>
+        <p class="soru">5- Wat vind je tot nu toe het leukste onderdeel van de opleiding?</p>
         <p class="cevap">Programmeren en Engels.</p>
         <p class="soru">6- Wat vind je moeilijk aan de opleiding?</p>
         <p class="cevap">Tot nu toe vind ik niets moeilijk.</p>
         <img id="tony" src="../img/tony_mathurin.jpg" alt="foto van tony">
         <a id="tonytext" href="">Interviewer: <br> Tony Mathurin</a>
-<!--         <div class="email">
-          <input class="email-input" type="email" name="Deneme" placeholder="Vul je email in... " id="dnemeem"/>
-        </div>
-        <div class="number">
-          <input type="tel" class="number-input" placeholder="Vul je nummer in..."/>
-        </div> -->
         <div class="star">
           <input class="star-review" type="range" min="1" max="5" value="3">
           <p id="rating">Geef een rating...</p>
-<!--           <p id="email">E-mail</p>
-          <p id="number">Nummer</p> -->
-<!--           <button class="send-button" onclick="alert">Verzend</button> -->
         </div>
       </section>
       <section>
         <div class="projecten-table">
           <h2>Mijn Projects</h2>
-
-          <!-- Gebruik voor onderstaande een tabel -->
-          <ul>
-            <li><span><a href="project1.html">Portfolio Project Pagina</a></span><span><a href="https://github.com/furkanbilalnl/project-portfolio">Project Repository</a></span></li>
-            <li><span class="soon">Binnenkort Beschikbaar...</span><span class="soon">Binnenkort Beschikbaar...</span></li>
-            <li><span class="soon">Binnenkort Beschikbaar...</span><span class="soon">Binnenkort Beschikbaar...</span></li>
-            <li><span class="soon">Binnenkort Beschikbaar...</span><span class="soon">Binnenkort Beschikbaar...</span></li>
-            <li><span class="soon">Binnenkort Beschikbaar...</span><span class="soon">Binnenkort Beschikbaar...</span></li>
-            <li><span class="soon">Binnenkort Beschikbaar...</span><span class="soon">Binnenkort Beschikbaar...</span></li>
-            <li><span class="soon">Binnenkort Beschikbaar...</span><span class="soon">Binnenkort Beschikbaar...</span></li>
-          </ul>
+          <table>
+            <thead class="gorunmez">
+              <tr><th scope="col">Project</th><th scope="col">Repository</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><a href="project1.html">Portfolio Project Pagina</a></td><td><a href="https://github.com/furkanbilalnl/project-portfolio">Project Repository</a></td></tr>
+              <tr><td class="soon">Binnenkort Beschikbaar...</td><td class="soon">Binnenkort Beschikbaar...</td></tr>
+              <tr><td class="soon">Binnenkort Beschikbaar...</td><td class="soon">Binnenkort Beschikbaar...</td></tr>
+              <tr><td class="soon">Binnenkort Beschikbaar...</td><td class="soon">Binnenkort Beschikbaar...</td></tr>
+              <tr><td class="soon">Binnenkort Beschikbaar...</td><td class="soon">Binnenkort Beschikbaar...</td></tr>
+              <tr><td class="soon">Binnenkort Beschikbaar...</td><td class="soon">Binnenkort Beschikbaar...</td></tr>
+              <tr><td class="soon">Binnenkort Beschikbaar...</td><td class="soon">Binnenkort Beschikbaar...</td></tr>
+            </tbody>
+          </table>
         </div>
       </section>
     </main>

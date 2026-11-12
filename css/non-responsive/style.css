@@ -330,41 +330,54 @@ body.projects-page {
   font-size: 40px;
 }
 
-.projects-page .projecten-table ul {
-  display: flex;
+.projects-page .projecten-table table {
   flex: 1;
-  flex-direction: column;
-  gap: 7px;
+  width: 100%;
   min-height: 0;
-  padding: 0;
-  margin: 0;
-  list-style: none;
+  table-layout: fixed;
+  border-spacing: 0;
   border-radius: 20px;
   background-color: #134611;
 }
 
-.projects-page .projecten-table li {
-  display: grid;
-  flex: 1;
-  grid-template-columns: 280px 323px;
-  gap: 7px;
+.projects-page .projecten-table td + td {
+  border-left: 7px solid #134611;
 }
 
-.projects-page .projecten-table li span {
-  display: flex;
-  align-items: center;
+.projects-page .projecten-table tbody tr + tr td {
+  border-top: 7px solid #134611;
+}
+
+.projects-page .projecten-table td {
   font-size: larger;
   font-weight: bold;
   padding: 10px 20px;
+  vertical-align: middle;
   background-color: #e8fccf;
   color: #134611;
 }
 
-.projects-page li span.soon{
+.projects-page .projecten-table td:first-child {
+  width: 46%;
+}
+
+.projects-page .projecten-table .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.projects-page .projecten-table .soon {
   color: #e8fccf;
 }
 
-.projects-page li span.soon:hover{
+.projects-page .projecten-table .soon:hover {
   color: #134611;
 }
 
